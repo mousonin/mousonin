@@ -1,0 +1,15 @@
+.flex {
+    display: flex;
+}
+
+.nav-bar {
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+.nav-bar .logo {
+    height: 100%;
+}
+.nav-items {
+    padding: 10px 20px;
+}
