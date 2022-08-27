@@ -1,15 +1,167 @@
+:root {
+ --yellow-color: #FCA17D;
+ --blue-color: #606B99;
+}
+.shadow {
+    box-shadow: 0 0 10px #ccc;
+}
 .flex {
     display: flex;
+    justify-content: space-between;
 }
 
 .nav-bar {
-    justify-content: space-between;
     height: 80px;
     align-items: center;
+    margin: 40px 0px;
+    padding: 0 40px;
+    border-radius: 4px;
 }
 .nav-bar .logo {
     height: 100%;
 }
-.nav-items {
+.nav-item {
     padding: 10px 20px;
+    cursor: pointer;
+}
+.container {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.arrow {
+    position: absolute;
+    color: var(--blue-color);
+    font-size: 28px;
+    border: 1px solid var(--blue-color);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    z-index: 1;
+    cursor: pointer;
+    transform: translateY(50% - 14px);
+}
+.arrow-left {
+    left: 0;
+}
+.arrow-right {
+    right: 0;
+}
+.slider-main {
+    display: flex;
+    width: 100%;
+    overflow: visible;
+    transition: all 0.5s linear;
+}
+.slider {
+    flex: 1 0 100%;
+    text-align: justify;
+}
+
+.slider:first-child {
+    text-align: center;
+}
+
+.slider>img,
+.content-text>img {
+    height: 200px;
+}
+.content-text {
+    margin: 40px 80px;
+}
+
+.slider-about .content-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-resume {
+    margin: 0px 80px;
+}
+
+.slider-about .content-text p {
+    flex-basis: 60%;
+}
+
+.slider-work {
+    flex-wrap: wrap;
+}
+
+.repo-list>img {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: -140px;
+    right: 20px;
+    float: right;
+    z-index: 1;
+}
+
+.repo-list {
+    position: relative;
+    margin: 100px 60px 60px;
+    border-radius: 20px;
+    padding: 1px;
+}
+
+.repo-wrapper-img {
+    flex-basis: 100%;
+    overflow: hidden;
+    max-height: 160px;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+.repo-img {
+    width: 100%;
+}
+
+.contact-info {
+    margin-top: 100px;
+    justify-content: space-around;
+    position: relative;
+}
+
+.contact-info img {
+    position: absolute;
+    width: 50%;
+    top: -80px;
+    right: 80px;
+    z-index: -1;
+}
+
+.contact-item {
+    align-items: center;
+    justify-content: unset;
+}
+
+.contact-item i{
+    margin: 8px;
+    font-size: 20px;
+}
+
+.request-form {
+    padding: 20px;
+    border-radius: 20px;
+    flex-basis: 52%;
+    background-color: rgba(256, 256, 256, 0.9);
+}
+
+.request-form input,
+.request-form textarea{
+    width: -webkit-fill-available;
+    margin: 10px;
+    border-radius: 4px;
+    border: 0.5px solid #ccc;
+    line-height: 20px;
+}
+
+.request-form textarea {
+    height: 200px;
+    word-wrap: break-word;
+}
+
+.send-request {
+    padding: 0 40px;
+    float: right;
 }

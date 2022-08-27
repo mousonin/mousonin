@@ -1,0 +1,79 @@
+.line-effect {
+  width: 0;
+  height: 2px;
+  background-color: var(--blue-color);
+  position: fixed;
+  pointer-events: none;
+  transition: all 0.25s linear;
+}
+.hide {
+  display: none;
+}
+.unhide {
+  display: unset;
+}
+.disable {
+  pointer-events: none;
+  opacity: 0.4;
+}
+.yellow {
+  background-color: var(--yellow-color);
+}
+.blue {
+  background-color: var(--blue-color);
+}
+.active {
+  color: var(--yellow-color);
+  pointer-events: none;
+  font-size: 17px;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  margin: auto;
+  max-width: 600px;
+  height: 350px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 24px;
+  background-color: white;
+  position: relative;
+  color: var(--yellow-color);
+
+}
+.modal-text {
+  align-self: center;
+  margin: auto;
+  color: var(--blue-color);
+  font-size: 20px;
+}
+.modal-close {
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: var(--blue-color);
+  font-size: 20px;
+  font-weight: 800;
+}
+.modal-wrapper {
+  overflow-y: scroll;
+}
+.modal-wrapper,
+.modal-image {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.invalid {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+

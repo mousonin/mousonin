@@ -1,13 +1,45 @@
 * {
  box-sizing: border-box;
- font-family: 'Nanum Gothic', sans-serif;-0p-                                                                                                                                                                                                                                                                                                                                                                         
+ font-family: 'Nanum Gothic', sans-serif;                                                                                                                                                                                                                                                                                                                                                                      
 }
 ul,li {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+h1 {
+    margin: 0px 80px 100px 80px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+p {
+    font-size: 14px;
+    line-height: 24px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+textarea {
+    resize: none;
+}
 body {
     margin: auto;
     max-width: 1200px;
 }
+.btn {
+    border: none;
+    color: white;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 10px;
+    margin: 0 30px;
+    cursor: pointer;
+    transition: background-color 0.25s linear;
+}
+.btn:hover {
+    box-shadow: 0 0 20px #ccc;
+    border: 0.5px solid #ccc;
+}
+
