@@ -30,7 +30,6 @@ function handleChangeSlideByOther (e) {
   sliderMain.style = `transform: translateX(${positionX}px)`;
   [...navItem].forEach(i => i.classList.remove("active"));
   [...navItem][index - 1].classList.add("active");
-  console.log(index);
 }
 function handleHover(e) {
   let { top, left, width, height } = e.target.getBoundingClientRect();
