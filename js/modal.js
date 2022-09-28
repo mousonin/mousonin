@@ -33,3 +33,9 @@ function removeModal(e) {
     </div>`;
     modalContent.insertAdjacentHTML("beforeend",images);
 }))
+// modal on mobile
+const menuOpen = document.querySelector(".menu-open");
+const menuClose = document.querySelector(".menu-close");
+const navList = document.querySelector(".nav-list");
+menuOpen.onclick = () => navList.style.transform = "translateX(0%)";
+menuClose.onclick = () => navList.style.transform = "translateX(100%)";

@@ -30,5 +30,78 @@
 }
 /* mobile */
 @media (max-width:739px) {
-
+    h1{
+        margin: var(--responsive-margin);
+        position: relative; 
+    }
+    .btn {
+        margin: var(--responsive-margin);
+    }
+    .m-hide {
+        display: none;
+    }
+    h1::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: black;
+        bottom: 0;
+        left: 0;
+    }
+    .m-column {
+        flex-direction: column;
+    }
+    .m-display {
+        display: block !important;
+    }
+    .nav-bar {
+        max-width: 84vw;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+    }
+    .nav-list {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 70%;
+        z-index: 1;
+        transform: translateX(100%);
+        justify-content: unset;
+        box-shadow: 0 0 40px #ccc;
+        transition: transform 0.5s linear;
+    }
+    .nav-item {
+        padding: 20px;
+        border-top: 1px solid #ccc;
+    }
+    .nav-list .nav-item:first-child{
+        margin-top: 40px;
+        border: unset;     
+    }
+    .nav-list .menu-close {
+        margin-top: 20px;
+    }
+    .content-text {
+        margin: var(--responsive-margin);
+    }
+    .content-text > p {
+        flex-basis: unset !important;
+    }
+    .content-text > img {
+        position: absolute;
+        z-index: -1;
+        transform: translateX(50%) translateY(50%);
+        margin-top: -50px;
+        margin-left: -50px;
+        width: 60%;
+        opacity: 0.6;
+        
+    }
+    .repo-list {
+        margin: var(--responsive-margin);
+    }
 }

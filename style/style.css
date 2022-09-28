@@ -1,6 +1,7 @@
 :root {
  --yellow-color: #FCA17D;
  --blue-color: #606B99;
+ --responsive-margin: 20px
 }
 .shadow {
     box-shadow: 0 0 10px #ccc;
@@ -9,6 +10,9 @@
     display: flex;
     justify-content: space-between;
 }
+.hide {
+    display: none;
+}
 
 .nav-bar {
     height: 80px;
@@ -16,14 +20,27 @@
     margin: 40px 0px;
     padding: 0 40px;
     border-radius: 4px;
+    position: relative;
 }
 .nav-bar .logo {
     height: 100%;
+}
+.nav-list {
+    position: relative;
 }
 .nav-item {
     padding: 10px 20px;
     cursor: pointer;
 }
+.nav-bar .menu-close,
+.nav-bar .menu-open {
+    display: none;
+    font-size: 24px;
+    position: absolute;
+    right: 40px;
+    transform: translateY(50% - 10px) ;
+}
+
 .container {
     position: relative;
     align-items: center;
@@ -159,4 +176,23 @@
 .send-request {
     padding: 0 40px;
     float: right;
+}
+.noti {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 0 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(#02b3fe,#fff);
+    transform: translateY(150%);
+    animation: noti 4s forwards 1s linear ;
+}
+@keyframes noti {
+    20%,
+    80% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(150%);
+    }
 }

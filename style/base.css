@@ -36,10 +36,13 @@ body {
     border-radius: 10px;
     margin: 0 30px;
     cursor: pointer;
-    transition: background-color 0.25s linear;
+    transition: background-color 0.25s linear, transform 1s linear;
 }
+
 .btn:hover {
     box-shadow: 0 0 20px #ccc;
     border: 0.5px solid #ccc;
 }
+
+
 
