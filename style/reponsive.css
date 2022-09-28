@@ -104,4 +104,21 @@
     .repo-list {
         margin: var(--responsive-margin);
     }
+    .repo-link {
+        text-decoration: underline;
+        color: red;
+    }
+    .repo-wrapper-img {
+        margin: 10px;
+        max-height: 200px;
+    }
+    .contact-info {
+        margin: auto;
+    }
+    /* modal */
+    .modal-content {
+        max-width: 88vw;
+        max-height: 50%;
+        height: unset;
+    }
 }
