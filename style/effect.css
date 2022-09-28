@@ -86,6 +86,7 @@
   font-weight: 700;
   animation: typing 8s steps(40) infinite, blinking 1s infinite;
   margin: auto;
+  text-decoration: none;
 }
 
 @keyframes typing {
@@ -94,7 +95,7 @@
   }
 
   50%, 90% {
-    width: 160px;
+    width: 180px;
   }
 }
 
